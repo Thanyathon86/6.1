@@ -1,9 +1,14 @@
-// src/App.tsx
 import React from "react";
-import ProductList from "./pages/ProductList";
+import Navbar from "./assets/component/Navbar";
+import Home from "./pages/home";
 
-function App() {
-  return <ProductList />;
-}
+const App: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-black">
+      <Navbar />
+      <Home />
+    </div>
+  );
+};
 
 export default App;
